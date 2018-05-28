@@ -41,7 +41,7 @@ namespace Gist.ModelDrivenGUI {
 		}
 		protected void OnGUI() {
 			if (toggleUI.Visible)
-				viewWindow = GUILayout.Window(GetInstanceID(), viewWindow, Window, name);
+				viewWindow = GUILayout.Window(GetInstanceID(), viewWindow, Window, typeof(TargetFramerate).Name);
 		}
 		protected void OnDisable() {
 			if (view != null) {
